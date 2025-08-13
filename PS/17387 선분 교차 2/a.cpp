@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int ccw(pair<int, int> p1, pair<int, int> p2, pair<int, int> p3)
+int ccw(pair<long long, long long> p1, pair<long long, long long> p2, pair<long long, long long> p3)
 {
     long long cross = (p2.x - p1.x) * (p3.y - p2.y) - (p2.y - p1.y) * (p3.x - p2.x);
     if(cross > 0) return -1;
